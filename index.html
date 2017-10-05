@@ -17,6 +17,7 @@
   <link href='css/ionicons.min.css' rel='stylesheet' type='text/css'>
   <link href='css/owl.carousel.css' rel='stylesheet' type='text/css'>
   <link href='css/magnific-popup.css' rel='stylesheet' type='text/css'>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link href='css/style.css' rel='stylesheet' type='text/css'>
 </head>
 
@@ -97,62 +98,58 @@
 
 
       <section class='section section-main active' id='intro'>
-        <figure class="crossfade">
-          <figure>
+        <div class="crossfade">
+          <div style="background-image:url('img/Merzouga.JPG'); background-repeat: no-repeat; background-size: cover; height:100%;">
             <figcaption>
               <i class="fa fa-map-marker"></i> Merzouga, Morocco
             </figcaption>
-          </figure>
+          </div>
 
 
-          <figure>
+          <div style="background-image:url('img/Beirut.jpg'); background-repeat: no-repeat; background-size: cover; height:100%;">
             <figcaption>
               <i class="fa fa-map-marker"></i> Beirut, Lebanon
             </figcaption>
-          </figure>
+          </div>
 
-
-          <figure>
+          <div style="background-image:url('img/Byblos.jpg'); background-repeat: no-repeat; background-size: cover; height:100%;">
             <figcaption>
               <i class="fa fa-map-marker"></i> Byblos, Lebanon
             </figcaption>
-          </figure>
+          </div>
 
-
-          <figure>
+          <div style="background-image:url('img/Deir al-Qamar.jpg'); background-repeat: no-repeat; background-size: cover; height:100%;">
             <figcaption>
               <i class="fa fa-map-marker"></i> Deir al-Qamar, Lebanon
             </figcaption>
-          </figure>
+          </div>
 
 
-          <figure>
+          <div style="background-image:url('img/Asilah.JPG'); background-repeat: no-repeat; background-size: cover; height:100%;">
             <figcaption>
               <i class="fa fa-map-marker"></i> Asilah, Morocco
             </figcaption>
-          </figure>
+          </div>
 
 
-          <figure>
+          <div style="background-image:url('img/Petra1.jpg'); background-repeat: no-repeat; background-size: cover; height:100%;">
             <figcaption>
               <i class="fa fa-map-marker"></i> Petra, Jordan
             </figcaption>
-          </figure>
+          </div>
 
-
-          <figure>
+          <div style="background-image:url('img/Siqkarak.jpg'); background-repeat: no-repeat; background-size: cover; height:100%;">
             <figcaption>
-              <i class="fa fa-map-marker"></i> Petra, Jordan
+              <i class="fa fa-map-marker"></i> Siq Karak, Jordan
             </figcaption>
-          </figure>
+          </div>
 
-
-          <figure>
+          <div style="background-image:url('img/Fez.JPG'); background-repeat: no-repeat; background-size: cover; height:100%;">
             <figcaption>
               <i class="fa fa-map-marker"></i> Fez, Morocco
             </figcaption>
-          </figure>
-        </figure>
+          </div>
+        </div>
 
 
         <div class='container-fluid'>
@@ -1171,6 +1168,22 @@
   <script src='js/validator.min.js'>
   </script>
   <script src='js/script.js'>
+  </script>
+  <script>
+    $(document).ready(function() {
+      $('div.crossfade').owlCarousel({
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        items:1,
+        margin:0,
+        stagePadding:0,
+        smartSpeed:10,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:false
+      });
+    });
   </script>
 </body>
 </html>
