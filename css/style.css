@@ -714,13 +714,14 @@ a.btn-custom{
 	transition:all .3s cubic-bezier(.785,.135,.15,.86);
 }
 .portfolio-items > li > .inner > .overlay > .view-project{
+	height:100%;
 	font-size:16px;
 	line-height:16px;
 	font-weight:bold;
 	vertical-align:middle;
 	position:absolute;
-	top:50%;
-	margin-top:-28px;
+	top:0%;
+	margin-top:0px;
 	color:#FFF;
 	color:rgba(255,255,255,.6);
 	text-decoration:none;
@@ -743,8 +744,8 @@ a.btn-custom{
 	font-weight:bold;
 	vertical-align:middle;
 	position:absolute;
-	top:30%;
-	margin-top:-28px;
+	top:10%;
+	height: 100%;
 	color:#FFF;
 	color:rgba(255,255,255,.6);
 	text-decoration:none;
